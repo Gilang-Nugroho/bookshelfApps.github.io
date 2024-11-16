@@ -1,0 +1,184 @@
+/* Reset dasar untuk membuat tampilan lebih konsisten di semua browser */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #6200ea;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #6200ea;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"],
+button {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+button:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+button span {
+  font-weight: bold;
+}
+
+#incompleteBookList,
+#completeBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+[data-testid="bookItem"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+[data-testid="bookItem"] h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+[data-testid="bookItem"] p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+[data-testid="bookItem"] div {
+  display: flex;
+  gap: 10px;
+}
+
+[data-testid="bookItem"] button {
+  flex: 1;
+  padding: 6px;
+  font-size: 0.9rem;
+  background-color: #ff5722;
+}
+
+[data-testid="bookItem"] button:hover {
+  background-color: #e64a19;
+}
+
+[data-testid="bookItemEditButton"] {
+  background-color: #009688;
+}
+
+[data-testid="bookItemEditButton"]:hover {
+  background-color: #00796b;
+}
+
+[data-testid="bookItemIsCompleteButton"] {
+  background-color: #4caf50;
+}
+
+[data-testid="bookItemIsCompleteButton"]:hover {
+  background-color: #388e3c;
+}
+
+/* Gaya tambahan untuk form pencarian */
+#searchBook {
+  display: flex;
+  gap: 10px;
+}
+
+#searchBook label {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+#searchBook input {
+  flex: 1;
+}
+
+#searchSubmit {
+  flex-shrink: 0;
+  background-color: #1976d2;
+}
+
+#searchSubmit:hover {
+  background-color: #1565c0;
+}
